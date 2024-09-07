@@ -1,0 +1,76 @@
+/* General styling for body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  /* Container styling */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  
+  /* Fruit details section */
+  .fruit-details {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .fruit-name {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  
+  .fruit-image {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 20px;
+  }
+  
+  .botanical-info p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  /* Edit button */
+  .edit-button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+  }
+  
+  .edit-button:hover {
+    background-color: #555;
+  }
+  
+  /* Back to Gallery button */
+  .back-button {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .back-button:hover {
+    background-color: #555;
+  }
+  

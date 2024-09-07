@@ -12,4 +12,7 @@ app.use('/', indexRouter)
 const fruitRouter = require('./routes/fruit')
 app.use('/fruits', fruitRouter)
 
+const updateRouter = require('./routes/update')
+app.use('/update', updateRouter)
+
 app.listen(3000)

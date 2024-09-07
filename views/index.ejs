@@ -12,9 +12,13 @@
     <div class="fruit-container">
         <% fruits.forEach(function(fruit) { %>
           <div class="fruit-card">
+            <a href="/fruits/<%= fruit.name %>" class="fruit-link">
+
             <img src="<%= fruit.f_imgs %>" alt="<%= fruit.name %>" class="fruit-image">
             <h3 class="fruit-name"><%= fruit.name %></h3>
+          </a>
           </div>
+        
         <% }) %>
     </div>
 </body>

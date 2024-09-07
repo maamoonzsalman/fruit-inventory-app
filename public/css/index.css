@@ -22,6 +22,11 @@ body {
       grid-template-columns: repeat(5, 1fr); /* Maximum 5 cards per row */
     }
   }
+
+  .fruit-link {
+    text-decoration: none; /* Remove underline from links */
+    display: block; /* Ensure the link takes up the full space of the card */
+  }
   
   /* Individual fruit card */
   .fruit-card {
