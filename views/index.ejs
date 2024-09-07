@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+</head>
+<body>
+    <%- include('partials/navbar') %>
+    <div class="fruit-container">
+        <% fruits.forEach(function(fruit) { %>
+          <div class="fruit-card">
+            <img src="<%= fruit.f_imgs %>" alt="<%= fruit.name %>" class="fruit-image">
+            <h3 class="fruit-name"><%= fruit.name %></h3>
+          </div>
+        <% }) %>
+    </div>
+</body>
+</html>

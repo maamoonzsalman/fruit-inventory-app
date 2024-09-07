@@ -1,0 +1,57 @@
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  /* Container for all the fruit cards */
+  .fruit-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px; /* Max width to control the grid */
+    margin: 0 auto; /* Center the grid */
+  }
+  
+  /* Max 5 cards per row */
+  @media (min-width: 1000px) {
+    .fruit-container {
+      grid-template-columns: repeat(5, 1fr); /* Maximum 5 cards per row */
+    }
+  }
+  
+  /* Individual fruit card */
+  .fruit-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hover effect for fruit card */
+  .fruit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Image styling */
+  .fruit-image {
+    max-width: 100%;
+    height: 100px; /* Fixed height for consistency */
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  
+  /* Fruit name styling */
+  .fruit-name {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  

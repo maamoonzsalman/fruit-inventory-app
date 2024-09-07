@@ -4,7 +4,7 @@ const db = require("../db/queries")
 
 indexRouter.get('/', async (req, res) => {
     const fruits = await db.getAllFruits()
-    res.send(fruits)
+    res.render('index', {fruits: fruits})
 })
 
 module.exports = indexRouter;
