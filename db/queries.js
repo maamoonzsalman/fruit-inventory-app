@@ -24,8 +24,23 @@ async function updateFruitById(updatedFruit) {
     return result.rows[0]
 }
 
+async function addFruit(fruitData) {
+    const {name, family, f_order, genus} = fruitData
+    const f_imgs = ''
+
+    const result = await pool.query(
+        `INSERT INTO fruits (name, family, f_order, genus, f_imgs)
+        VALUES ($1, $2, $3, $4, $5)
+        RETURNING *`, 
+        [name, family, f_order, genus, f_imgs]
+    );
+
+    return result.rows[0]
+}
+
 module.exports = {
     getAllFruits,
     getFruitByName,
-    updateFruitById
+    updateFruitById,
+    addFruit
 }

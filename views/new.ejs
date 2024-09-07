@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/new.css">
+</head>
+<body>
+    <%- include('partials/navbar') %>
+
+    <div class="container">
+        <h2 class="form-title">Add a New Fruit</h2>
+    
+        <form action="/new" method="POST">
+          <!-- Fruit Name -->
+          <label for="name">Fruit Name:</label>
+          <input type="text" id="name" name="name" required>
+    
+          <!-- Family -->
+          <label for="family">Family:</label>
+          <input type="text" id="family" name="family" required>
+    
+          <!-- Order -->
+          <label for="order">Order:</label>
+          <input type="text" id="order" name="order" required>
+    
+          <!-- Genus -->
+          <label for="genus">Genus:</label>
+          <input type="text" id="genus" name="genus" required>
+    
+          <!-- Image Upload -->
+    
+          <!-- Submit Button -->
+          <button type="submit" class="submit-button">Add Fruit</button>
+        </form>
+      </div>
+</body>
+</html>

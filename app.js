@@ -15,4 +15,7 @@ app.use('/fruits', fruitRouter)
 const updateRouter = require('./routes/update')
 app.use('/update', updateRouter)
 
+const newRouter = require('./routes/new')
+app.use('/new', newRouter)
+
 app.listen(3000)
